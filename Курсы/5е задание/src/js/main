@@ -1,0 +1,2 @@
+let buttonStart = document.queryselector("#start");
+console.log(buttonStart);
