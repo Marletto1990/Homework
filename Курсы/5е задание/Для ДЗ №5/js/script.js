@@ -1,0 +1,10 @@
+let menuGet = document.querySelectorAll('.menu-item');
+console.log(menuGet);
+let mainMenu = document.querySelector('.menu');
+mainMenu.insertBefore(menuGet[2], menuGet[1]);
+let advRemove = document.querySelector('.adv');
+advRemove.remove();
+document.getElementById('title').innerHTML = 'Мы продаем только подлинную технику Apple';
+document.body.style.backgroundImage = "url('img/apple_true.jpg')";
+let answer = prompt('Как вы относитесь к технике Apple?', 'Дороговато..');
+document.querySelector('#prompt').innerHTML = answer;
